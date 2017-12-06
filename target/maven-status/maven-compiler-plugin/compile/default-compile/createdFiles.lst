@@ -1,0 +1,4 @@
+factory\SqlSessionFactoryProvider.class
+services\TestService.class
+controllers\TestController.class
+model\Customer.class

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<mapper namespace="dao.CustomerMapper">
+    <resultMap type="Customer" id="baseresultmap" autoMapping="true">
+        <id property="idCustomer" column="CustomerID" ></id>
+        <result property="name" column= "FirstName" ></result>
+    </resultMap>
+    
+    <select id="sellectAll" resultMap="baseresultmap">
+        select * from SalesLT.Customer
+    </select>
+    
+</mapper>
